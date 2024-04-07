@@ -2,12 +2,15 @@
 
 char mayusc(char c)
 {
-
+    return (c- 32);
 }
 
 int main()
 {
-    char minuscula = 'a';
+    
+
+    char minuscula;
+    scanf("%c", &minuscula);
     char mayuscula = mayusc(minuscula);
 
     printf("%c -> %c", minuscula, mayuscula);

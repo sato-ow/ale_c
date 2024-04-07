@@ -1,0 +1,3 @@
+gcc = Gnu C Compiler
+
+gcc <nombre archivo> -o <nombre ejecutable>
