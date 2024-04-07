@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <unistd.h>
 
-#define MAX(a, b) a > b ? a : b
-#define MIN(a, b) a < b ? a : b
 
 int inverseNum(int num)
 {
@@ -13,8 +11,15 @@ int inverseNum(int num)
         num /= 10;
         result *= 10;
     }
-    
+
     return result/10;
+}
+
+int ft_abs(int a)
+{
+    if(a > 0)
+        return a;
+    return (-a);
 }
 
 int main()
@@ -29,12 +34,12 @@ int main()
     sleep(4);
 
     num_aux = inverseNum(num);
-
+    
     printf("Ahora de esos dos numeros resta el más grande menos el pequeño\n");
     sleep(8);
     /* Te toca: */
 
-    num = MAX(num, num_aux)-MIN(num, num_aux);
+    num = ft_abs(num-num_aux);
 
     printf("Ahora dale a este nuevo numero la vuelta\n");
     sleep(4);
@@ -50,3 +55,16 @@ int main()
     
     return 0;
 }
+
+
+/*
+123
+321
+----
+198
+891
+----
+
+
+
+*/
