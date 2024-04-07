@@ -7,11 +7,11 @@ char mayusc(char c)
 
 int main()
 {
-    
-
     char minuscula;
     scanf("%c", &minuscula);
+ 
     char mayuscula = mayusc(minuscula);
-
     printf("%c -> %c", minuscula, mayuscula);
+
+    return 0;
 }
