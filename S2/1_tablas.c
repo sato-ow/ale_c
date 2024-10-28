@@ -6,5 +6,5 @@
 
 int main()
 {
-    // crea una matriz de 2 dimensiones de char's y rellenalá como un tres en raya 
+    // crea una matriz de 2 dimensiones de char's y rellenalá como un tres en raya  con 'x' y 'o'
 }

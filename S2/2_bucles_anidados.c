@@ -25,6 +25,6 @@ int main()
         printf("\n"); // esto es como imprimir un enter (un salto de linea)
         i++;
     }
-
+    // Truco, para ver como funciona ir apuntando en un papel que pasa;
     return 0;
 }
